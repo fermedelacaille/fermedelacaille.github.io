@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Ferme de la caille</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/main.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- leaflet map library-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Ferme de la caille</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Accueil
+
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/produits.html">Produits<span class="sr-only">(actuel)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/chevrerie.html">Chevrerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gite.html">Gîte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class=" display-4 mt-2 mb-2">Nos produits</h1>
+          <p class="lead">Si vous souhaitez passer commande, il vous suffit de nous envoyer par mail la liste des
+            produits ainsi que le lieu de reception de la commande à l'adresse suivante:
+            <a class="mail-link" target="_blank" href="mailto:fermedelacaille@gmail.com"><b>fermedelacaille@gmail.com</b></a> <br/>
+            <i style="font-size: 1.1rem;">Nous sommes présents sur ces marchés ainsi qu'à notre ferme.</i></p>
+
+          <ul>
+            <li><b>St Marcellin</b> le samedi matin de 7h à 13h</li>
+            <li><b>Rovon</b> le mardi matin de 8h à 12h</li>
+            <li><b>St Hilaire-du-Rosier</b> le mardi après-midi de 17h à 20h</li>
+            <li><b>Tullins</b> le vendredi après-midi de 15h à 19h</li>
+            <li><b>Grenoble</b>
+              <ul>
+                <li><b>Place St André</b> le dimanche matin de 8h à 13h</li>
+                <li><b>Place de l'Estacade</b> le mercredi et vendredi matin de 7h à 13h</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container flex-grow-1">
+    <div class="row">
+      <div class="col-lg-12  my-5">
+        <h2></h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/faiselle.jpg" alt="faisselle" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Les faisselles</b> :
+        <ul>
+          <li>1 grande 3€</li>
+          <li>lot de 4 petites 4€</li>
+          <li>lot de 6 petites 6€</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/mallevoise.jpg" alt="mallevoise" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>La Mallevoise (petite tomme de chèvre)</b> :
+        <ul>
+          <li>2€ pièce</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/tommes-aromatisees.jpg" alt="tomme aromatisée" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Les tommes aromatisées à l'herbe du moment</b> :
+        <ul>
+          <li>2.5€ pièce</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/pyramide.jpg" alt="pyramide" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>La pyramide et/ou la buche cendrée</b> :
+        <ul>
+          <li>3€ pièce</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/pate-fleurie.jpg" alt="pâte fleurie" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Le Pâte fleurie (style camembert de chèvre)</b> :
+        <ul>
+          <li>5€ pièce</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/bleu-de-chevre.jpg" alt="bleu de chèvre" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Le bleu de chèvre</b> :
+        <ul>
+          <li>35€ / Kg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/tomme-de-malleval.jpg" alt="tomme de malleval" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>La Tomme de Malleval (pâte pressée)</b> :
+        <ul>
+          <li>35€ / Kg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/cirque-de-malleval.jpg" alt="cirque de malleval" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Le Cirque de Malleval (style chèvretin)</b> :
+        <ul>
+          <li>35€ / Kg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/yaourt.jpg" alt="yaourt" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Les Yaourts nature</b> :
+        <ul>
+          <li>1€ pièce</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/creme-desserts.jpg" alt="crèmes desserts" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Les crèmes desserts (chocolat, caramel, café ou vanille)</b> :
+        <ul>
+          <li>1.10€ pièce</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/miel.jpg" alt="miel" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Du miel bio de notre confection</b> :
+        <ul>
+          <li>5€ le pot de 200g (disponible au gré des saisons)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/confitures.jpg" alt="confitures" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>De la Confiture pour tous les goûts</b> aux Framboises sauvages, aux Cynorhodons, aux Mûrs sauvages, au Suros
+        mais aussi à l’Aubépine, à la Prunelle, ou au mélange Suros/Mûrs sauvages :
+        <ul>
+          <li>5€ le pot</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <img src="assets/produits/oeufs.jpg" alt="mallevoise" class="col-md-3 product-image">
+      <div class="col-md-6 product-text">
+        <b>Des œufs frais</b> des poules grises du Vercors, ou de couleurs diverses selon les espèces :
+        <ul>
+          <li>2.50€ les 6</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <div class="col-md-9 product-text">
+        <b>Le lait au litre (seulement sur demande)</b> :
+        <ul>
+          <li>2€ / Litre</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <div class="col-md-9 product-text">
+        <b>A la saison des cabris (mars – juin), nous en vendons nourris au lait de leur mère.</b>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="py-3">
+    <div class="container">
+      <p class="m-0 text-center">Copyright &copy; fermedelacaille 2020</p>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+
+</script>
+
+</html>
